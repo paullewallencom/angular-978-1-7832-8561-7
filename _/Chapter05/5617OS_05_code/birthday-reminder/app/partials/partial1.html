@@ -1,0 +1,20 @@
+<div class="text-right" my_facebook permissions="friends_birthday" friends='myFriends'></div>
+<h1>My Friend's Birthdays</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Friend</th>
+            <th>Birthday</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="friend in myFriends | orderBy:'fromToday'">
+            <td>{{$index+1}}</td>
+            <td>
+                <img ng-src="{{friend.picture.data.url}}">{{friend.name}}
+            </td>
+            <td>{{friend.birthdayDate |date:'MMM dd'}}</td>
+        </tr>
+    </tbody>
+</table>

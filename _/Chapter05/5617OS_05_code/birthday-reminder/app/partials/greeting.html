@@ -1,0 +1,7 @@
+<span class="pull-right">
+    <span id="welcome" ng-if="logged">Welcome {{username}} | <a href="#" onclick="FB.logout()">Logout</a>
+    </span>
+    <span ng-if="!logged">
+        <button class="btn btn-primary" ng-click="myLogin()">Login</button>
+    </span>
+</span>

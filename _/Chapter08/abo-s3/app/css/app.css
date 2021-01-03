@@ -1,0 +1,22 @@
+.pin-layout{
+column-count: 4;
+column-gap: 0px;
+-moz-column-count: 4;
+-moz-column-gap: 0px;
+-webkit-column-count: 4;
+-webkit-column-gap: 0px;
+}
+.thumbnail{
+display: inline-block;
+margin:5px;
+padding:5px;
+border-radius: 5px;
+box-shadow: 2px 2px 5px #ccc;
+background: #fff;
+}
+
+.brand{
+color:#ff6600;
+font-size: 50px;
+font-family: georgia;
+}
